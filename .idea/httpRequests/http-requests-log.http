@@ -1,0 +1,817 @@
+GET http://localhost:3000
+Accept: application/json
+token: 18
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T170002.401.txt
+
+###
+
+GET http://localhost:3000
+Accept: application/json
+token: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T165947.200.txt
+
+###
+
+GET http://localhost:3000
+Accept: application/json
+token: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T165918.401.txt
+
+###
+
+GET http://localhost:3000
+Accept: application/json
+token: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T165848.401.txt
+
+###
+
+GET http://localhost:3000
+Accept: application/json
+token: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T165733.401.txt
+
+###
+
+DELETE http://localhost:3000/users/14
+Accept: application/json
+token: 19
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T163855.403.txt
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+Accept: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "password": "password"
+}
+
+<> 2023-11-10T163848.201.json
+
+###
+
+POST http://localhost:3000/users/register
+Accept: application/json
+Content-Type: application/json
+Content-Length: 186
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T163839.201.json
+
+###
+
+DELETE http://localhost:3000/users/14
+Accept: application/json
+token: 14
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T163820.401.txt
+
+###
+
+DELETE http://localhost:3000/users/14
+Accept: application/json
+token: 14
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T163738.401.txt
+
+###
+
+DELETE http://localhost:3000/users/14
+Accept: application/json
+token: 14
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T163721.200.json
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima1234@mail.com",
+  "full_name": "bima pangestu",
+  "username": "bima123",
+  "profile_image_url": "test.com/image12.png",
+  "age": 24,
+  "phone_number": "adsa"
+}
+
+<> 2023-11-10T163352.200.json
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T163323.200.json
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162739.500.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162703.500.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162629.403.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162611.403.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162552.403.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162532.403.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+token: 14
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162509.403.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162452.401.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T162233.500.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T161949.500.txt
+
+###
+
+PUT http://localhost:3000/users/14
+Content-Type: application/json
+Accept: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "profile_image_url": "test.com/image.png",
+  "age": 21,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T161930.500.txt
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+Accept: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "password": "password"
+}
+
+<> 2023-11-10T160713.201.json
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+Accept: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "password": "password"
+}
+
+<> 2023-11-10T160649.400.txt
+
+###
+
+POST http://localhost:3000/users/register
+Accept: application/json
+Content-Type: application/json
+Content-Length: 186
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T160617.201.json
+
+###
+
+POST http://localhost:3000/users/register
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T160527.201.json
+
+###
+
+POST http://localhost:3000/users/register
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T160400.201.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T155141.201.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T155058.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153512.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153501.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153346.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153313.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153212.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153201.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153133.500.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T153114.500.txt
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 185
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bimamail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T152443.201.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 186
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "adsad"
+}
+
+<> 2023-11-10T152257.201.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Type: application/json
+Content-Length: 187
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "bima@mail.com",
+  "full_name": "bima",
+  "username": "bima",
+  "password": "password",
+  "profile_image_url": "test.com/image.png",
+  "age": 20,
+  "phone_number": "082345"
+}
+
+<> 2023-11-10T152249.201.json
+
+###
+
+POST http://localhost:3000/users
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-10T151946.500.txt
+
+###
+
