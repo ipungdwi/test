@@ -1,3 +1,208 @@
+DELETE http://localhost:3000/comments/1
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T190319.200.json
+
+###
+
+DELETE http://localhost:3000/comments/1
+Accept: application/json
+token: 23
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T190315.403.txt
+
+###
+
+DELETE http://localhost:3000/comments/1
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T190308.401.txt
+
+###
+
+PUT http://localhost:3000/comments/1
+Content-Type: application/json
+token: 23
+Content-Length: 28
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "commented"
+}
+
+<> 2023-11-13T185951.403.txt
+
+###
+
+PUT http://localhost:3000/comments/1
+Content-Type: application/json
+token: 22
+Content-Length: 28
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "commented"
+}
+
+<> 2023-11-13T185943.200.json
+
+###
+
+PUT http://localhost:3000/comments/1
+Content-Type: application/json
+token: 22
+Content-Length: 28
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "commented"
+}
+
+<> 2023-11-13T185625.200.json
+
+###
+
+PUT http://localhost:3000/comments/1
+Content-Type: application/json
+Content-Length: 28
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "commented"
+}
+
+<> 2023-11-13T185615.401.txt
+
+###
+
+PUT http://localhost:3000/comments/1
+Content-Type: application/json
+Content-Length: 28
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "commented"
+}
+
+<> 2023-11-13T185539.404.html
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184911.200.json
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184544.500.txt
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184257.200.json
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184228.200.json
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184126.500.txt
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184041.200.json
+
+###
+
+GET http://localhost:3000/comments
+Accept: application/json
+token: 22
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-13T184022.200.json
+
+###
+
+POST http://localhost:3000/comments/register
+Accept: application/json
+Content-Type: application/json
+token: 22
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "comment": "test",
+  "PhotoId": 1
+}
+
+<> 2023-11-13T181222.201.json
+
+###
+
 GET http://localhost:3000
 Accept: application/json
 token: 18
@@ -625,193 +830,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-11-10T153346.500.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T153313.500.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T153212.500.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T153201.500.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T153133.500.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T153114.500.txt
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 185
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bimamail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T152443.201.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 186
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bima@mail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "adsad"
-}
-
-<> 2023-11-10T152257.201.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Type: application/json
-Content-Length: 187
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "bima@mail.com",
-  "full_name": "bima",
-  "username": "bima",
-  "password": "password",
-  "profile_image_url": "test.com/image.png",
-  "age": 20,
-  "phone_number": "082345"
-}
-
-<> 2023-11-10T152249.201.json
-
-###
-
-POST http://localhost:3000/users
-Accept: application/json
-Content-Length: 0
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-11-10T151946.500.txt
 
 ###
 
