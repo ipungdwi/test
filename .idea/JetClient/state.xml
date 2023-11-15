@@ -26,12 +26,12 @@
                 <option name="id" value="5f259f24-d38c-4ace-9a67-0d473a75fd95" />
                 <option name="method" value="POST" />
                 <option name="name" value="register" />
-                <option name="url" value="http://localhost:3000/users/register" />
+                <option name="url" value="https://final-project-2-my-gram-production.up.railway.app/users/register" />
               </requestState>
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima@mail.com&quot;,&#10;  &quot;password&quot;: &quot;test1234&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima@mail.com&quot;,&#10;  &quot;password&quot;: &quot;test&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>

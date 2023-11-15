@@ -41,7 +41,7 @@ class UserC {
                     code: 404, message: "user not found"
                 };
             }
-            if (!this.#compare_hash(newUser.password, password)) {
+            if (!await this.#compare_hash(newUser.password, password)) {
                 throw {
                     code: 400, message: "user password is wrong"
                 };
