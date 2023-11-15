@@ -1,4 +1,4 @@
-const {Comment, Photo, User, SocialMedia} = require("../models");
+const {Comment, Photo, User} = require("../models");
 
 class PhotoC {
 
@@ -66,7 +66,7 @@ class PhotoC {
                 caption,
                 poster_image_url,
                 UserId: user.id
-            }).catch(err => {
+            }).catch(() => {
                 throw {
                     code: 400
                 }
