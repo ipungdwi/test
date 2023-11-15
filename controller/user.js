@@ -1,4 +1,5 @@
 const {User} = require("../models");
+
 class UserC {
     static #hash;
     static #compare_hash;
@@ -14,17 +15,21 @@ class UserC {
         try {
             const {email, full_name, username, password, profile_image_url, age, phone_number} = req.body;
             const newUser = new User({
-                email, full_name, username, password: this.#hash(password), profile_image_url, age, phone_number
+                email, full_name, username, password: await this.#hash(password), profile_image_url, age, phone_number
             });
-            await newUser.validate();
-            await newUser.save();
+            await newUser.save().catch(err => {
+                throw {
+                    code: 400,
+                    err
+                };
+            });
             res.status(201).json({
                 user: {
                     email, full_name, username, profile_image_url, age, phone_number
                 }
             });
         } catch (err) {
-            res.sendStatus(500);
+            res.sendStatus(err.code || 500);
         }
     }
     static login = async (req, res) => {
@@ -51,7 +56,14 @@ class UserC {
     static updateUser = async (req, res) => {
         try {
             const {userId} = req.params;
-            const {email, full_name, username, profile_image_url, age, phone_number} = req.body;
+            const {
+                email = null,
+                full_name = null,
+                username = null,
+                profile_image_url = null,
+                age = null,
+                phone_number = null
+            } = req.body;
             if (parseInt(userId) !== req.user.id) {
                 throw {
                     code: 403,
@@ -68,6 +80,10 @@ class UserC {
             }, {
                 where: {
                     id: parseInt(userId)
+                }
+            }).catch(_ => {
+                throw {
+                    code: 400
                 }
             });
             res.json({

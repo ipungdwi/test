@@ -8,8 +8,11 @@ module.exports = {
             const newComment = new Comment({
                 UserId, comment, PhotoId
             });
-            await newComment.validate();
-            await newComment.save();
+            await newComment.save().catch(()=>{
+                throw {
+                    code: 400
+                };
+            });
             res.status(201).json({
                 comment: {
                     id: newComment.id,
@@ -21,7 +24,7 @@ module.exports = {
                 }
             })
         } catch (err) {
-            res.sendStatus(500);
+            res.sendStatus(err.code || 500);
         }
     },
     getComments: async (req, res) => {
@@ -45,7 +48,7 @@ module.exports = {
     updateComment: async (req, res) => {
         try{
             const {commentId} = req.params;
-            const {comment} = req.body;
+            const {comment = null} = req.body;
             const updatedComment = await Comment.findByPk(commentId, {});
             if(req.user.id !== updatedComment.UserId) {
                 throw {
@@ -54,6 +57,10 @@ module.exports = {
             }
             await updatedComment.update({
                 comment
+            }).catch(()=>{
+                throw {
+                    code: 400
+                };
             });
             res.json({
                 comment: updatedComment
@@ -65,13 +72,18 @@ module.exports = {
     deleteComment: async (req, res) => {
         try{
             const {commentId} = req.params;
-            const updatedComment = await Comment.findByPk(commentId, {});
-            if(req.user.id !== updatedComment.UserId) {
+            const deletedComment = await Comment.findByPk(commentId, {});
+            if(!deletedComment){
+                throw {
+                    code: 404
+                }
+            }
+            if(req.user.id !== deletedComment.UserId) {
                 throw {
                     code: 403
                 }
             }
-            await updatedComment.destroy();
+            await deletedComment.destroy();
             res.json({
                 message: "Your comment has been successfully deleted"
             });

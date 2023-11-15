@@ -19,13 +19,11 @@ module.exports = {
       },
       poster_image_url: {
         allowNull: false,
-        validate: {
-          isUrl: true
-        },
         type: Sequelize.TEXT
       },
       UserId: {
         type: Sequelize.INTEGER,
+        onDelete: "CASCADE",
         references: {
           model: "Users",
           key: "id"
