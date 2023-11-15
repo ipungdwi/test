@@ -1,3 +1,7 @@
+const crypto = require("./lib/crypto");
+require("./middleware/auth").Init(crypto);
+require("./controller/user").Init(crypto);
+
 const express = require("express");
 const app = express();
 

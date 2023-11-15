@@ -14,21 +14,12 @@ module.exports = {
                 type: Sequelize.STRING,
             },
             email: {
-                validate: {
-                    isEmail: true,
-                },
-                unique: {
-                    args: true,
-                    msg: "email is used"
-                },
+                unique: true,
                 allowNull: false,
                 type: Sequelize.STRING
             },
             username: {
-                unique: {
-                    args: true,
-                    msg: "username is used"
-                },
+                unique: true,
                 allowNull: false,
                 type: Sequelize.STRING
             },
@@ -38,23 +29,14 @@ module.exports = {
             },
             profile_image_url: {
                 allowNull: false,
-                validate: {
-                    isUrl: true,
-                },
                 type: Sequelize.TEXT
             },
             age: {
                 allowNull: false,
-                validate: {
-                    isInt: true,
-                },
                 type: Sequelize.INTEGER
             },
             phone_number: {
                 allowNull: false,
-                validate: {
-                    isNumeric: true,
-                },
                 type: Sequelize.STRING
             },
             createdAt: {

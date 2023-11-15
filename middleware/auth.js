@@ -9,7 +9,7 @@ class AuthMid {
 
     static isAuth = async (req, res, next) => {
         const {token} = req.headers;
-        const claim = this.#verify_token(token);
+        const claim = await this.#verify_token(token);
         if (!claim) {
             return res.sendStatus(401);
         }
