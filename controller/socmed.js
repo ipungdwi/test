@@ -53,7 +53,8 @@ class SocialMediaC {
                 name,
                 social_media_url,
                 UserId: user.id
-            }).catch(() => {
+            }).catch((err) => {
+                console.log(err);
                 throw {
                     code: 400
                 }
@@ -103,7 +104,7 @@ class SocialMediaC {
                 }
             }
 
-            res.status(201).json(data)
+            res.status(201).json(data[1][0])
         } catch (error) {
             res.status(error.code || 500).json(error.message)
         }
