@@ -1,4 +1,4 @@
-const {Comment, Photo, User} = require("../models");
+const {Comment, Photo, User, SocialMedia} = require("../models");
 
 class PhotoC {
 
@@ -9,7 +9,7 @@ class PhotoC {
                 include: [{
                     model: User,
                     attributes: ["id", "username", "profile_image_url"]
-                },{
+                }, {
                     model: Comment,
                     attributes: ["comment"],
                     include: {
@@ -67,7 +67,6 @@ class PhotoC {
                 poster_image_url,
                 UserId: user.id
             }).catch(err => {
-                console.log(err)
                 throw {
                     code: 400
                 }
@@ -89,6 +88,17 @@ class PhotoC {
             } = req.body
 
             const {photoId} = req.params
+            const foundPhoto = await Photo.findByPk(parseInt(photoId), {});
+            if (!foundPhoto) {
+                throw {
+                    code: 404
+                }
+            }
+            if (req.user.id !== parseInt(foundPhoto.UserId)) {
+                throw {
+                    code: 403
+                }
+            }
 
             const data = await Photo.update({
                 title,
@@ -122,6 +132,17 @@ class PhotoC {
     static async deletePhotoById(req, res) {
         try {
             const {photoId} = req.params
+            const foundPhoto = await Photo.findByPk(parseInt(photoId), {});
+            if (!foundPhoto) {
+                throw {
+                    code: 404
+                }
+            }
+            if (req.user.id !== parseInt(foundPhoto.UserId)) {
+                throw {
+                    code: 403
+                }
+            }
             const data = await Photo.destroy({
                 where: {
                     id: parseInt(photoId)
@@ -136,7 +157,6 @@ class PhotoC {
             res.status(200).json({message: "Your photo has been successfully deleted"})
 
         } catch (error) {
-            console.log(error);
             res.sendStatus(error.code || 500)
         }
     }
