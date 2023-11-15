@@ -1,33 +1,43 @@
 const {Comment, Photo, User} = require("../models");
-class PhotoC{
+
+class PhotoC {
 
     // Akses Sudah Login
-    static async getAllPhotos (req, res) {
+    static async getAllPhotos(req, res) {
         try {
             const data = await Photo.findAll({
-                include: User
+                include: [{
+                    model: User,
+                    attributes: ["id", "username", "profile_image_url"]
+                },{
+                    model: Comment,
+                    attributes: ["comment"],
+                    include: {
+                        model: User,
+                        attributes: ["username"]
+                    }
+                }]
             })
 
             res.status(200).json(data)
         } catch (error) {
-            console.log(error)
-            res.status(500).json(error)
+            res.sendStatus(error.code || 500)
         }
     }
 
     // Akses susuai ID
     static async getPhotoById(req, res) {
         try {
-            const { photoId } = req.params
-            const userData = req.userData
+            const {photoId} = req.params
+            const user = req.user
             const data = await Photo.findOne({
                 where: {
-                    id : parseInt(photoId),
-                    UserId: userData.id
+                    id: parseInt(photoId),
+                    UserId: user.id
                 }
             })
 
-            if(!data) {
+            if (!data) {
                 throw {
                     code: 404,
                     message: "Photo not found!"
@@ -36,56 +46,63 @@ class PhotoC{
 
             res.status(200).json(data)
         } catch (error) {
-            console.log(error)
-            res.status(error.code || 500).json(error.message)
+            res.sendStatus(error.code || 500)
         }
     }
 
     // Add Photos
-    static async addPhoto (req, res) {
+    static async addPhoto(req, res) {
         try {
             const {
                 title,
                 caption,
-                image_url
+                poster_image_url
             } = req.body
 
-            const userData = req.userData
-            // console.log(userData, "<<userdata")
+            const user = req.user
 
             const data = await Photo.create({
                 title,
                 caption,
-                image_url,
-                UserId: userData.id
+                poster_image_url,
+                UserId: user.id
+            }).catch(err => {
+                console.log(err)
+                throw {
+                    code: 400
+                }
             });
-           
+
             res.status(201).json(data)
         } catch (error) {
-            res.status(500).json(error)
+            res.sendStatus(error.code || 500)
         }
     }
 
     // Update Photo
-    static async updatePhoto (req, res) {
+    static async updatePhoto(req, res) {
         try {
             const {
-                title,
-                caption,
-                image_url
+                title = null,
+                caption = null,
+                poster_image_url = null
             } = req.body
 
-            const { photoId } = req.params
+            const {photoId} = req.params
 
             const data = await Photo.update({
                 title,
                 caption,
-                image_url
+                poster_image_url
             }, {
                 where: {
-                    id : parseInt(photoId)
+                    id: parseInt(photoId)
                 },
-                returning : true
+                returning: true
+            }).catch(() => {
+                throw {
+                    code: 400
+                }
             })
 
             if (!data[0]) {
@@ -95,20 +112,19 @@ class PhotoC{
                 }
             }
 
-            res.status(201).json(data)
+            res.status(201).json(data[1][0])
         } catch (error) {
-            console.log(error)
-            res.status(error.code || 500).json(error.message)
+            res.sendStatus(error.code || 500)
         }
     }
 
     //Delete Photo By ID
     static async deletePhotoById(req, res) {
         try {
-            const { photoId } = req.params
+            const {photoId} = req.params
             const data = await Photo.destroy({
-                where:{
-                    id : parseInt(photoId)
+                where: {
+                    id: parseInt(photoId)
                 }
             })
             if (!data) {
@@ -117,12 +133,13 @@ class PhotoC{
                     message: "Photo not found!"
                 }
             }
-            res.status(200).json("Your photo has been successfully deleted")
+            res.status(200).json({message: "Your photo has been successfully deleted"})
 
         } catch (error) {
-            console.log(error)
-            res.status(error.code || 500).json(error.message)
+            console.log(error);
+            res.sendStatus(error.code || 500)
         }
     }
 }
+
 module.exports = PhotoC;
