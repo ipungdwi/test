@@ -8,19 +8,33 @@ class AuthMid {
     }
 
     static isAuth = async (req, res, next) => {
-        const {token} = req.headers;
-        if(!token) {
-            return res.sendStatus(401);
+        try {
+            const {token} = req.headers;
+            if (!token) {
+                throw {
+                    code: 401
+                };
+            }
+            const claim = await this.#verify_token(token).catch(()=>{
+                throw {
+                    code: 401
+                };
+            });
+            if (!claim) {
+                throw {
+                    code: 401
+                };
+            }
+            req.user = await User.findByPk(claim.id);
+            if (!req.user) {
+                throw {
+                    code: 401
+                };
+            }
+            next();
+        }catch (err) {
+            res.sendStatus(err.code || 500);
         }
-        const claim = await this.#verify_token(token);
-        if (!claim) {
-            return res.sendStatus(401);
-        }
-        req.user = await User.findByPk(claim.id);
-        if (!req.user) {
-            return res.sendStatus(401);
-        }
-        next();
     }
 }
 

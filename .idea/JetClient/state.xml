@@ -11,7 +11,7 @@
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima@mail.com&quot;,&#10;  &quot;full_name&quot;: &quot;bima pangestu&quot;,&#10;  &quot;username&quot;: &quot;bima&quot;,&#10;  &quot;password&quot;: &quot;test1234&quot;,&#10;  &quot;profile_image_url&quot;: &quot;bima.com&quot;,&#10;  &quot;age&quot;: 20,&#10;  &quot;phone_number&quot;: &quot;082340&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima123@mail.com&quot;,&#10;  &quot;full_name&quot;: &quot;bima123 pangestu&quot;,&#10;  &quot;username&quot;: &quot;bima123&quot;,&#10;  &quot;password&quot;: &quot;test1234&quot;,&#10;  &quot;profile_image_url&quot;: &quot;bima.com&quot;,&#10;  &quot;age&quot;: 20,&#10;  &quot;phone_number&quot;: &quot;082340&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -26,12 +26,12 @@
                 <option name="id" value="5f259f24-d38c-4ace-9a67-0d473a75fd95" />
                 <option name="method" value="POST" />
                 <option name="name" value="register" />
-                <option name="url" value="https://final-project-2-my-gram-production.up.railway.app/users/register" />
+                <option name="url" value="http://localhost:3000/users/register" />
               </requestState>
               <requestState>
                 <option name="body">
                   <bodyState>
-                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima@mail.com&quot;,&#10;  &quot;password&quot;: &quot;test&quot;&#10;}" />
+                    <option name="raw" value="{&#10;  &quot;email&quot;: &quot;bima123@mail.com&quot;,&#10;  &quot;password&quot;: &quot;test1234&quot;&#10;}" />
                     <option name="type" value="JSON" />
                   </bodyState>
                 </option>
@@ -201,7 +201,7 @@
                   <list>
                     <headerState>
                       <option name="key" value="token" />
-                      <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzAwMDYyODAyLCJleHAiOjE3MDAwNjY0MDJ9.ItXWBo87B-aAB-RD4ARw5wrEZMAAxp6c31oKys1hdzo" />
+                      <option name="value" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzAwMTM3MTU5LCJleHAiOjE3MDAxNDA3NTl9.CM0V-11VGmqT0oMHXYvHSeUpdIcST4tvpBgtgw0vMn4" />
                     </headerState>
                     <headerState>
                       <option name="key" value="Content-Type" />

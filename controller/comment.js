@@ -30,6 +30,9 @@ module.exports = {
     getComments: async (req, res) => {
         try {
             const comments = await Comment.findAll({
+                where: {
+                    UserId: req.user.id
+                },
                 include: [{
                     model: Photo,
                     attributes: ["id", "title", "caption", "poster_image_url"]
