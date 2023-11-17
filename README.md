@@ -1,6 +1,6 @@
 # Final Project 2 - My Gram
 
-## Kelompok 12
+## Group 12
 
 Moch Bima Pangestu
 Ipung Dwi Ari Saputra
@@ -13,7 +13,7 @@ https://final-project-2-my-gram-production-3311.up.railway.app/
 
 ```
 
-## Users API
+## Usage Example for User API
 1. Register
    
 ```bash
@@ -36,7 +36,20 @@ https://final-project-2-my-gram-production-3311.up.railway.app/login/user/regist
 
 ```
 
+2. Login
 
+```bash
+#Post
+https://final-project-2-my-gram-production-3311.up.railway.app/login/user/login
+
+```
+
+```bash
+#Post
+{
+  "email": "test@gmail.com",
+  "password": "strong_password_here",
+}
 
 
  
